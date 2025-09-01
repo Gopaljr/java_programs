@@ -1,0 +1,27 @@
+package oops;
+
+class employee{
+	String name;
+	int salary;
+	
+	employee(String n,int s ){
+		name=n;
+		salary=s;
+	}
+	void employeeDetails() {
+		System.out.println("Employee Name: "+name);
+		System.out.println("Salary: "+salary);
+	}
+}
+
+
+
+public class OopsExampleprgm {
+
+	public static void main(String[] args) {
+		employee obj=new employee("Rahul",25000);
+		obj.employeeDetails();
+
+	}
+
+}
