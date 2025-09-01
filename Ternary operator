@@ -1,0 +1,43 @@
+//Divisible by 2 using Ternary operator
+
+package comm;
+
+import java.util.Scanner;
+
+public class TernaryOperator {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number: ");
+		int num=sc.nextInt();
+		
+		String result=(num%2==0) ? "Divisible by 2":"NOT Divisible by 2";
+		System.out.println(result);
+
+	}
+
+}
+
+
+//print any 4 monsoon  using Ternary operator
+package comm;
+
+import java.util.Scanner;
+
+public class TernaryOperator {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number(1-4): ");
+		int choice=sc.nextInt();
+		
+		String result=(choice==1) ? "Summer":
+					  (choice==2) ?	"Rainy(Monsoon)":
+					  (choice==3)?"Winter":
+					  (choice==4)?"Autum":
+					  "Invalid";
+		System.out.println(result);
+
+	}
+
+}
