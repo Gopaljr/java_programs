@@ -1,0 +1,27 @@
+package oops;
+
+class student{
+	String name;
+	int age;
+	
+	student(String n,int a ){
+		name=n;
+		age=a;
+	}
+	void display() {
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+	}
+}
+
+
+
+public class OopsExampleprgm {
+
+	public static void main(String[] args) {
+		student obj=new student("Gopal",21);
+		obj.display();
+
+	}
+
+}
