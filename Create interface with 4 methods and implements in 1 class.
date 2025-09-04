@@ -1,0 +1,45 @@
+package oops;
+
+interface Calculator{
+	int add(int a,int b);
+	int sub(int a,int b);
+	int multiply(int a, int b);
+	int divide(int a, int b);
+}
+
+class BasicCalculator implements Calculator{
+	public int add(int a,int b) {
+		
+		return a+b;
+	}
+	public int sub(int a,int b) {
+		
+		return a-b;
+	}
+	public int multiply(int a,int b) {
+		
+		return a*b;
+	}
+	public int divide(int a,int b) {
+		if(b==0) {
+			System.out.println("Not divisible");
+		}
+		return a/b;
+	}
+}
+
+public class Interfaceprograms{
+	public static void main(String[] args) {
+		Calculator obj = new BasicCalculator();
+//		obj.add(10,5);
+//		obj.sub(10,5);
+//		obj.multiply(10,5);
+//		obj.divide(10,5);
+		
+		System.out.println("Adding: "+obj.add(10, 5));
+		System.out.println("Subtract: "+obj.sub(10, 5));
+		System.out.println("Multiply: "+obj.multiply(10, 5));
+		System.out.println("Divide: "+obj.divide(10, 5));
+		
+	}
+}
