@@ -1,0 +1,26 @@
+package oops;
+
+interface playable{
+	public void play(); 
+}
+
+class video implements playable{
+	public void play() { 
+		System.out.println("Video is Playing");
+	}
+}
+
+class audio implements playable{
+	public void play() {
+		System.out.println("Audio is Playing");
+	}
+}
+
+public class Interfaceprograms{
+public static void main(String[] args) {
+	video vp=new video();
+	audio ap=new audio();
+	vp.play();
+	ap.play();
+}
+}
