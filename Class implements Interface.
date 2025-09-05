@@ -1,0 +1,30 @@
+package oops;
+
+interface vehicle {
+	void start();
+	void stop();
+	void acc(int speed);
+}
+class Carr implements vehicle{
+	public void start() {
+		System.out.println("Car Started");
+	}
+	public void stop() {
+		System.out.println("Car is Stopped..");
+}
+	public void acc(int speed) {
+		System.out.println("Accelerate the Car "+speed+"K/hr");
+	}
+
+
+}
+
+public class Interfaceprograms{
+	public static void main(String[] args) {
+		Carr obj=new Carr();
+		obj.start();
+		obj.acc(10);
+		obj.stop();
+		
+}
+}
